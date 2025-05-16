@@ -1,4 +1,7 @@
 ## 1. App is running
+
+# PersistentVolume and PersistentVolumeClaim use hostPath with ReadWriteMany, which is only supported in local, single-node clusters
+
 ```bash
 kubectl get pods -l app=todoapp
 
