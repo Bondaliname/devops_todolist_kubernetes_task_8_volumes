@@ -3,11 +3,11 @@ kind: PersistentVolume
 metadata:
   name: pv-data
 spec:
-  persistentVolumeReclaimPolicy: Delete
-  storageClassName: standard
-  accessModes:
-    - ReadWriteMany
   capacity:
     storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: standard
   hostPath:
-    path: /data/
+    path: /mnt/data
